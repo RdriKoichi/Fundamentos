@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//demostração do vetor inverso
+
+int main() {
+
+    int i, soma = 0;
+    int vetor[5] = {8,15,16,1,4};
+
+    for(i=4; i>=0; i--) {
+        printf("vetor[%i] = %i\n",i, vetor[i]);
+    }
+
+    return 0;
+}
