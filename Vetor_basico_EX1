@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+//vetor com conteudo
+
+/*
+    int i;
+    int vetor[5] = {8,15,16,1,4};
+
+    for(i=0; i<5; i++) {
+        printf("vetor[%i] = %i\n",i, vetor[i]);
+    }
+*/
+
+//vetor sem conteudo
+
+    int i, num[5];
+
+    for(i=0;i<5;i++) {
+        printf("\nVetor[%i] = %i\n",i, num[i]);
+    }
+
+    return 0;
+}
