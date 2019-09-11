@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+    int maior,menor;
+    float media,total=0;
+    int i;
+    int posicao[10] = {10,35,31,45,89,9,3,17,25,1};
+
+    maior = posicao[0];
+    menor = posicao[0];
+
+    for(i=0; i<10;i++) {
+
+        printf("idade[%i] = %i\n",i, posicao[i]);
+
+        total = total + posicao[i];
+
+        if (posicao[i] > maior)
+            maior = posicao[i];
+        if(posicao[i] < menor)
+            menor = posicao[i];
+    }
+
+    media = total/10;
+
+    printf("\nmaior: %i\n", maior);
+    printf("menor: %i\n", menor);
+    printf("media: %.2f\n", media);
+
+   /* int posicao[10], maior,menor,soma=0;
+    float media;
+
+    for (int i = 0; i < 10; i++) {
+        printf("digite o valor:\n");
+        scanf("%d", &posicao[i]);
+        soma = soma + posicao[i];
+
+    }
+
+    maior = posicao[0];
+    menor = posicao[0];
+
+    for(int i=0; i<10;i++) {
+
+        if (posicao[i] > maior)
+            maior = posicao[i];
+        if(posicao[i] < menor)
+            menor = posicao[i];
+    }
+
+    media = total/10;
+
+    printf("\nmaior: %i\n", maior);
+    printf("menor: %i\n", menor);
+    printf("media: %.2f\n", media);
+   */
+    return 0;
+}
