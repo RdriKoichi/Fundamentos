@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// maiores de 35 anos
+
+int main() {
+    
+    int i;
+    //int idade[10] = {10,35,31,45,89,9,3,17,25,1};
+    int cont = 0;
+    /*
+    for(i=0; i<10;i++) {
+        printf("idade[%i] = %i\n",i, idade[i]);
+        if (idade[i] >= 35)
+            cont++;
+    }
+    printf("\nmairoes de 35 anos: %i\n",cont);
+
+     */
+    int idade[10];
+
+    for (i = 0;  i<10; i++) {
+        printf("digite as idades: \n");
+        scanf("%i", &idade[i]);
+        if(idade[i]>=35)
+            cont++;
+    }
+    
+    printf("\nmairoes de 35 anos: %i\n",cont);
+    
+    return 0;
+}
