@@ -50,7 +50,7 @@ int main() {
             menor = posicao[i];
     }
 
-    media = total/10;
+    media = soma/10;
 
     printf("\nmaior: %i\n", maior);
     printf("menor: %i\n", menor);
