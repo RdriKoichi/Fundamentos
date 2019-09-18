@@ -1,14 +1,19 @@
-include <stdio.h>
+#include <stdio.h>
 
-int main() {
+int main(){
+    int matriz[5][5], i, j;
 
-int matriz[3][3], i, j;
-// i é o índice de linhas e j de colunas
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
+    for (int i = 0; i < 5 ; i++) {
+        for (int j = 0; j < 5; j++) {
             printf("matriz[%d][%d]: ",i,j);
             scanf("%d",&matriz[i][j]);
         }
     }
-return 0;
+    for (int i = 0; i < 5 ; i++) {
+        printf("\n");
+        for (int j = 0; j < 5; j++) {
+            printf("%d ",matriz[i][j]);
+        }
+    }
+    return 0;
 }
