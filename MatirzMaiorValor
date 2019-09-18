@@ -18,7 +18,7 @@ int main(){
         }
     }
 
-    maior = matriz[0][0];
+    maior = matriz[0][0];                           //MOSTRA MAIOR VALOR
 
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
