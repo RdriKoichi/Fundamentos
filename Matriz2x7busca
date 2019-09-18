@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){   //incompleto
+
+    int matriz[2][7], busca;
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 7; j++) {
+            printf("matriz[%d][%d]: ",i,j);
+            scanf("%d",&matriz[i][j]);
+        }
+    }
+    for (int i = 0; i < 2; i++) {
+        printf("\n");
+        for (int j = 0; j < 7; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+    }
+    printf("\n\nQual sua busca na matriz: ");
+    scanf("%i", &busca);
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 7; j++) {
+            if(busca ==  matriz[i][j]) {
+                printf("EXISTE!!!");
+            } else {
+                printf("NAO EXISTE!!!");
+            }
+        }
+    }
+
+
+    return 0;
+}
