@@ -1,0 +1,14 @@
+include <stdio.h>
+
+int main() {
+
+int matriz[3][3], i, j;
+// i é o índice de linhas e j de colunas
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("Digite o valor da linha %d e coluna %d: \n", i, j);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+return 0;
+}
