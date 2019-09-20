@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main(){
+
+    int matriz[5][5],i,j;
+    int maior, menor, linha, coluna;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("matriz[%d][%d]: ",i,j);
+            scanf("%d",&matriz[i][j]);
+        }
+    }
+    for (int i = 0; i < 3; i++) {
+        printf("\n");
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+    }
+
+    maior = matriz[0][0];                           //MOSTRA MAIOR VALOR
+    linha = 0;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (matriz[i][j] > maior) {
+                maior = matriz[i][j];
+                linha = i;
+                coluna = j;
+            }
+        }
+    }
+
+    printf("\n\nMaior matriz[%d][%d]: %i \n", linha, coluna, maior);
+
+    menor = matriz[linha][0];
+
+    for (int j = 0; j < 3; j++) {
+        if (matriz[linha][j] < menor) {
+            menor = matriz[linha][j];
+            coluna = j;
+        }
+    }
+
+    printf("\nMenor resultado da linha da matriz[%d][%d]: %i \n", linha, coluna, menor);
+
+    return 0;
+}
