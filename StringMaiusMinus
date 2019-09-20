@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+int main(){
+    char tabela[2];
+
+    printf("digite a letra: ");
+    scanf("%c", &tabela[0]);
+
+    if((tabela[0] >= 65) && (tabela[0] <=90)){
+        printf("MAIUSCULO!!!");
+    }
+    else{
+        printf("MINUSCULO!!!");
+    }
+
+return 0;
+}
