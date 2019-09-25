@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+    char str1[25];
+    char str2[10];
+    char str3[10];
+
+    strcpy(str1, "voadora ");
+    strcpy(str2, "insana ");
+    strcpy(str3, "loca");
+
+    strcat(str1, str2);
+    strcat(str1, str3);
+
+    printf("%s", str1);
+
+
+    return 0;
+}
