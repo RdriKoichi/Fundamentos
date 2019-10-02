@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct{
+char nome[30], curso[30];
+int matricula;
+}aluno;
+
+int main(){
+
+    aluno x[5];
+    int aux;
+    int n;
+
+    for (int i = 0; i < 5; i++) {
+
+        printf("Digite o nome: ");
+        fgets(x[i].nome, 30, stdin);
+        __fpurge(stdin);
+        printf("Digite a matricula: ");
+        scanf("%i", &x[i].matricula);
+        __fpurge(stdin);
+        printf("Digite o curso: ");
+        fgets(x[i].curso, 30, stdin);
+        __fpurge(stdin);
+        printf("\n");
+
+    }
+
+    for (int i = 0; i < ; i++){
+        for (int j = 0; j < ; j++){                             //IMCOMPLETO
+            if (x[i].nome < x[j].nome){
+                aux = x[i].nome;
+                x[i].nome = x[j].nome;
+                x[j].nome = aux;
+            }
+        }
+    }
+
+    for (int i = 0; i < 5; i++) {
+
+        printf("\n");
+        printf("Nome: %s", x[i].nome);
+        printf("Curso: %s", x[i].curso);
+        printf("Numero da Matricula: %i", x[i].matricula);
+        printf("\n");
+
+    }
+
+
+    return 0;
+}
