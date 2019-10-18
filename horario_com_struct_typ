@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int hr;
+    int min;
+    int seg;
+}horario;
+
+void converteHorario(int total_segundos, horario* hor){
+    hor -> hr = total_segundos/3600;
+    hor -> min = (total_segundos%3600)/60;
+    hor -> seg = (total_segundos%3600)%60;
+}
+int main() {
+    horario hor;
+    int total_segundos;
+
+    printf("digite o segundos: ");
+    scanf("%i", &total_segundos);
+    converteHorario(total_segundos, &hor);
+    printf("%02i : %02i : %02i", hor.hr, hor.min, hor.seg );
+    
+    return 0;
+}
